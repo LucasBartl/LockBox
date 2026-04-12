@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\controllers;
 
@@ -7,6 +7,9 @@ class LogoutController
 {
     public function __invoke()
     {
-        echo "indexcontroller.__invoke";
+
+        session_destroy();
+        redirect("/login");
+        
     }
 }

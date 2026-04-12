@@ -91,3 +91,6 @@ function old($campo) {
     return '';
 
 }
+function redirect($uri){
+    return header("location: {$uri}");
+}
