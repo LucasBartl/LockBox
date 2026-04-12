@@ -1,14 +1,16 @@
-<?php 
+<?php
 
 namespace App\controllers;
 
 
 class LoginController
 {
-    public function index(){
-        echo "login";
+    public function index()
+    {
+       return view('login');
     }
-    public function login(){
+    public function login()
+    {
         echo "login login";
     }
 }

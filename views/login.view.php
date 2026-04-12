@@ -59,7 +59,7 @@
 
                         <div class="card-actions">
                             <button class="btn btn-primary btn-block">Login</button>
-                            <a href="/registrar" class="btn btn-link">Quero me registrar</a>
+                            <a href="/register" class="btn btn-link">Quero me registrar</a>
                         </div>
                     </div>
                 </div>
