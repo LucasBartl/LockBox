@@ -1,15 +1,13 @@
 <?php
 
-namespace App\controllers;
-
+namespace App\Controllers;
 
 class LogoutController
 {
     public function __invoke()
     {
-
         session_destroy();
-        redirect("/login");
-        
+
+        return redirect('/login');
     }
 }

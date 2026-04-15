@@ -6,6 +6,7 @@ use App\controllers\LoginController;
 use App\controllers\LogoutController;
 use App\controllers\RegisterController;
 use App\controllers\DashboardController;
+use App\controllers\Notas\CriarController;
 
 (new Route())
 
@@ -20,6 +21,8 @@ use App\controllers\DashboardController;
 ->get ('/register', [RegisterController::class, 'index'])
 ->post ('/register', [RegisterController::class, 'register'])
 
+->get('/notas/criar', [CriarController::class, 'index'])
+->post('/notas/criar', [CriarController::class, 'store'])
 
 ->run();
 

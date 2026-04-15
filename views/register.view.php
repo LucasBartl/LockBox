@@ -14,7 +14,7 @@
 
     <div class="bg-white hero mr-40 min-h-screen text-black">
         <div class="hero-content -mt-20">
-            <form method="POST" action="/registrar">
+            <form method="POST" action="/register">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">Crie a sua conta</div>

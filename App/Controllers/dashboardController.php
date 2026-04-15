@@ -1,12 +1,17 @@
-<?php 
+<?php
 
-namespace App\controllers;
-
+namespace App\Controllers;
 
 class DashboardController
 {
     public function __invoke()
     {
-        echo "indexcontroller.__invoke";
+        if ( ! auth() ) {
+            return redirect('/login');
+        }
+
+        return view('dashboard', [
+            'user' => auth()
+        ]);
     }
 }
